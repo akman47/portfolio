@@ -27,6 +27,7 @@ header {
     position: -webkit-stikcy;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 header h1 {
@@ -91,9 +92,7 @@ header nav ul li a:hover {
 .hero p {
     background-color: var(--charcoal);
     color: var(--turquoise);
-    padding: 5px 5px;
-    margin-right: -35px;
-    margin-bottom: -35px;
+    padding: 10px 10px;
     border-radius: 15px;
 }
 
@@ -103,8 +102,12 @@ header nav ul li a:hover {
 
 /* section style*/
 section {
-    padding: 60px;
+    padding: 110px 45px 30px 45px;
 }
+ /*
+#about-me, #work, #contact {
+    padding-top: 110px;
+}*/
 
 .main-content {
     display: flex;
@@ -127,14 +130,14 @@ section {
 .main-right {
     flex: 2 80%;
     border-left: 5px solid var(--charcoal);
-    padding-left: 10px;
+    padding-left: 15px;
     padding-bottom: 30px;
 }
 
 .main-content img {
-    height: 250px;
-    width: 250px;
-    margin: 10px;
+    height: 260px;
+    width: 260px;
+    margin: 5px;
     border-radius: 15px;
     border: 2px solid var(--turquoise);
 }
@@ -151,19 +154,16 @@ section {
 
 /* work section */
 .work-container {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/*.work-collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-} */
-
-.work-collection a {
-    display: inline;
+.work-collection img:hover {
+    width: 300px;
+    height: 300px;
 }
 
 .work-info {
@@ -171,12 +171,17 @@ section {
     color: var(--charcoal);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     padding: 10px;
+    width: 170px;
+    position: relative;
+    left: 5px;
+    bottom: 68px;
 }
 
 .work-info h3 {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .work-info p {

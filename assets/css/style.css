@@ -36,9 +36,9 @@ header h1 {
     font-size: 30px;
     text-align: right;
     margin: 0;
-    padding: 5px 5px 5px 40px;
+    padding: 5px 5px 5px 60px;
     position: relative;
-    left: -40px;
+    left: -60px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -69,7 +69,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--charcoal);
+    background: var(--turquoise);
     color: var(--whitesmoke);
     font-weight: bolder;
     border-radius: 15px;
@@ -80,7 +80,7 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    height: 180px;
+    height: 200px;
     background-position: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -107,18 +107,102 @@ section {
 }
 
 .main-content {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-content h2 {
-    font-size: 45px;
+    font-size: 50px;
     text-align: right;
+    padding-right: 0;
+}
+
+.main-left {
+    border-right: var(--charcoal);
+    flex: 1 20%;
+    padding-right: 10px;
+}
+
+.main-right {
+    flex: 2 80%;
+    border-left: 5px solid var(--charcoal);
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.main-content img {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid var(--turquoise);
 }
 
 /* about me section */
+#about-me p {
+    line-height: 2.0;
+    color: var(--charcoal);
+    width: 70%;
+    font-size: 15px;
+    padding: 5px 5px 5px 30px;
+    text-align: left;
+}
 
-/* projects section */
+/* work section */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* contact section */
+/*.work-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+} */
 
-/* resume section */
+.work-collection a {
+    display: inline;
+}
+
+.work-info {
+    background-color: var(--turquoise);
+    color: var(--charcoal);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+
+.work-info h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.work-info p {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* contact me section */
+address {
+    font: 15px;
+    line-height:1.2;
+    height: 30px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+}

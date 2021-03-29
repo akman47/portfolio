@@ -39,6 +39,8 @@ header h1 {
     padding: 5px 5px 5px 40px;
     position: relative;
     left: -40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 header a {
@@ -74,10 +76,7 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-section {
-    padding: 60px;
-}
-
+/* hero style */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -85,7 +84,35 @@ section {
     background-position: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero p {
+    background-color: var(--charcoal);
+    color: var(--turquoise);
+    padding: 5px 5px;
+    margin-right: -35px;
+    margin-bottom: -35px;
+    border-radius: 15px;
+}
+
+.hero p::first-line {
+    color: var(--whitesmoke);
+}
+
+/* section style*/
+section {
+    padding: 60px;
+}
+
+.main-content {
+
+}
+
+.main-content h2 {
+    font-size: 45px;
+    text-align: right;
 }
 
 /* about me section */

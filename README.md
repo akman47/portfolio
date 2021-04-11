@@ -10,6 +10,17 @@ A website that showcases my projects and abilities as a web developer
 ## Website
 https://akman47.github.io/portfolio
 
+## Snapshot
+![Snapshot of work portfolio](./assets/images/portfolio.png)
+
+## Applications
+* Run Buddy (https://akman47.github.io/run-buddy)
+![Snapshot of Run Buddy application](./assets/images/run-buddy.png)
+* Taskinator (https://akman47.github.io/taskinator)
+![Snapshot of a task tracking board](./assets/images/taskinator.png)
+* Password Generator (https://akman47.github.io/password-generator)
+![Snapshot of Password Generator application](./assets/images/password-generator.png)
+
 ## Criteria
 * GIVEN I need to sample a potential employee's previous work
 * WHEN I load their portfolio

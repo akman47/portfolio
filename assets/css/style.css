@@ -112,7 +112,7 @@ section {
 
 .main-content img {
     height: 300px;
-    width: 300px;
+    width: 360px;
     margin: 5px;
     border-radius: 15px;
     border: 2px solid var(--turquoise);
@@ -169,8 +169,8 @@ section {
 }
 
 .work-collection img:hover {
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 320px;
 }
 
 .work-info {
@@ -239,17 +239,22 @@ form {
     line-height: 1.8;
     margin: 8px;
     background-color: rgba(181, 238, 232, 0.75);
+    outline: none;
 }
 
 .btn {
-    background-color: var(--charcoal);
+    background-color: rgba(56, 56, 56, 0.8);
     color: var(--turquoise);
     font-size: 12px;
     font-weight: bold;
     padding: 5px 7px;
     text-align: center;
     border-radius: 5px;
-    width: 100%;
+    width: 30%;
+}
+
+.btn:hover {
+    background-color: var(--charcoal);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 

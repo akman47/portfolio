@@ -80,7 +80,7 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    height: 200px;
+    height: 230px;
     background-position: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +101,7 @@ header nav ul li a:hover {
 
 /* section style*/
 section {
-    padding: 110px 45px 30px 45px;
+    padding: 15px;
 }
 
 .main-content {
@@ -110,30 +110,9 @@ section {
     justify-content: center;
 }
 
-.main-content h2 {
-    font-size: 45px;
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.main-left {
-    border-right: var(--charcoal);
-    flex: 1 20%;
-    padding-right: 10px;
-}
-
-.main-right {
-    flex: 2 80%;
-    border-left: 5px solid var(--charcoal);
-    padding-left: 15px;
-    padding-bottom: 30px;
-}
-
 .main-content img {
-    height: 260px;
-    width: 260px;
+    height: 300px;
+    width: 300px;
     margin: 5px;
     border-radius: 15px;
     border: 2px solid var(--turquoise);
@@ -141,40 +120,57 @@ section {
 
 /* about me section */
 #about-me p {
-    line-height: 1.5;
+    line-height: 1.8;
     color: var(--charcoal);
     width: 60%;
     font-size: 18px;
-    padding: 5px 25px;
+    padding: 5px;
     text-align: left;
+    margin: 10px auto;
 }
 
 .bio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    border: solid 2px var(--charcoal);
+    border-radius: 10px;
 }
 
 .bio img {
     border: none;
-    height: 300px;
-    width: 280px;
+    height: 350px;
+    width: 330px;
     padding: 0;
 }
 
 /* work section */
+#work {
+    background-color: var(--charcoal);
+}
+
+#work h2 {
+    color: var(--turquoise);
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--turquoise);
+    width: 30%;
+    text-align: center;
+}
+
 .work-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .work-collection img:hover {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .work-info {
@@ -184,7 +180,7 @@ section {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
-    width: 170px;
+    width: max-content;
     position: relative;
     left: 5px;
     bottom: 68px;
@@ -205,17 +201,55 @@ section {
 #contact {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--turquoise);
 }
 
-#contact .main-left {
-    height: 80px;
+.contact-info {
+    width: 30%;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--charcoal);
 }
 
 address {
     font: 15px;
-    line-height:1.5;
+    line-height:1.8;
     height: 120px;
-    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid var(--charcoal);
+    width: 40%;
+    border-radius: 15px;
+}
+
+.form-input {
+    border: 1px solid var(--charcoal);
+    display: block;
+    padding: 7px 15px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    line-height: 1.8;
+    margin: 8px;
+    background-color: rgba(181, 238, 232, 0.75);
+}
+
+.btn {
+    background-color: var(--charcoal);
+    color: var(--turquoise);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 7px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 

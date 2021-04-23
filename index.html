@@ -39,31 +39,25 @@
 
     <!-- about me section -->
     <section id="about-me" class="main-content">
-        <div class="main-left">
-            <h2>About Me</h2>
-        </div>
-        <div class="main-right">
-            <div class ="bio">
-                    <img src="./assets/images/bio.jpg" alt ="Angela Man sitting at a table eating ice cream" />
-                    <p>
-                        I am currently studying to be a full stack developer. I love solving algorithms and puzzles 
-                        along with being creative, so developing web applications is an indulgence! When I am not creating
-                        content, I train and compete as a triathlete at the national and world level. To unwind
-                        and recharge, I love to spend time outdoors, camping, hiking, and going on soul-filling adventures
-                        which inspire me to dive even deeper into my creativity. That's a great programming loop to be in!
-                        It puts the cherry on top of the ice-cream.
-                    </p>
-            </div>
-        </div>        
+        <div class ="bio">
+            <img src="./assets/images/bio.jpg" alt ="Angela Man sitting at a table eating ice cream" />
+            <p>
+                I am currently studying to be a full stack developer. I love solving algorithms and puzzles 
+                along with being creative, so developing web applications is an indulgence! When I am not creating
+                content, I train and compete as a triathlete at the national and world level. To unwind
+                and recharge, I love to spend time outdoors, camping, hiking, and going on soul-filling adventures
+                which inspire me to dive even deeper into my creativity. That's a great programming loop to be in!
+                It puts the cherry on top of the ice-cream. 
+                <br>
+                <br>
+                If my work below inspires you, let me know!
+            </p>
+        </div>    
     </section>
 
     <!-- work section -->
     <section id="work" class="main-content">
-        <div class="main-left">
-            <h2>Work</h2>
-        </div>
-       
-        <div class="main-right">  
+            <h2>Work</h2>  
             <div class="work-container">
         <!--run buddy project -->
             <div class="work-collection">     
@@ -73,7 +67,7 @@
                         <p>HTML, CSS</p>
                 </div>
             </div>
-        <!-- horiseon project -->
+        <!-- code-quiz project -->
             <div class="work-collection">
                 <a href="https://akman47.github.io/code-quiz" target="_blank"><img src="./assets/images/code-quiz.png" alt="Screenshot of a coding quiz" /></a>
                 <div class="work-info">
@@ -81,8 +75,7 @@
                     <p>HTML, CSS, JavaScript</p>
                 </div>
             </div>
-
-        <!-- robot gladiator project -->
+        <!-- weather dashboard project -->
             <div class="work-collection"> 
                 <a href="https://akman47.github.io/weather-dashboard" target="_blank"><img src="./assets/images/weather-dashboard.png" alt="Screenshot of a city's weather forecast" /></a>
                 <div class="work-info">
@@ -91,7 +84,7 @@
                 </div>
             </div>
 
-        <!-- password generator -->
+        <!-- password generator project -->
             <div class="work-collection">
                 <a href="https://akman47.github.io/password-generator" target="_blank"><img src="./assets/images/password-generator.png" alt="Screenshot of a password generator" /></a>
                 <div class="work-info">
@@ -141,18 +134,22 @@
 
     <!-- contact section -->
     <section id="contact" class="main-content">
-        <div class="main-left">
+        <div class="contact-info">
             <h2>Contact Me</h2>
-        </div>
-        <div class="main-right">
             <address>
                 Phone: <a href="tel:+12813006033">281.300.6033</a><br />
                 Email: <a href="mailto:angela.k.man@gmail.com">angela.k.man@gmail.com</a><br />
                 Website: <a href="https://akman47.github.io/portfolio">GitHub</a><br />
                 Resume: <a href="https://linkedin.com/in/angela-man-b8533a6b/">LinkedIn</a><br />
                 Location: Houston, TX USA
-            </div>
+            </address>
         </div>
+        <form>
+            <input type="text" name="name" placeholder="Name" id="name" class="form-input" />
+            <input type="email" name="email" placeholder="Email" id="email" class="form-input" />
+            <textarea name="message" placeholder="Message" id="message" class="form-input"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
     </section>
 </body>
 </html>

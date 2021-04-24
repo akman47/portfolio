@@ -16,6 +16,8 @@ https://akman47.github.io/portfolio
 ## Applications
 * Run Buddy (https://akman47.github.io/run-buddy)
 ![Snapshot of Run Buddy application](./assets/images/run-buddy.png)
+* Weather Dashboard (https://akman47.github.io/weather-dashboard)
+![Snapshot of a city's weather forecast](./assets/images/weather-dashboard.png)
 * Taskinator (https://akman47.github.io/taskinator)
 ![Snapshot of a task tracking board](./assets/images/taskinator.png)
 * Password Generator (https://akman47.github.io/password-generator)

@@ -101,7 +101,7 @@ header nav ul li a:hover {
 
 /* section style*/
 section {
-    padding: 15px;
+    padding: 8px;
 }
 
 .main-content {
@@ -151,12 +151,12 @@ section {
 }
 
 #work h2 {
-    color: var(--turquoise);
+    color: var(--charcoal);
     font-size: 30px;
     padding: 5px;
     margin-bottom: 40px;
-    border-bottom: 2px solid var(--turquoise);
-    width: 30%;
+    background-color: var(--turquoise);
+    width: 100%;
     text-align: center;
 }
 
@@ -215,7 +215,7 @@ section {
 address {
     font: 15px;
     line-height:1.8;
-    height: 120px;
+    /* height: 120px;*/
 }
 
 form {
@@ -257,35 +257,22 @@ form {
     background-color: var(--charcoal);
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
-@media screen and (max-width: 1044px) {
-   #contact h2 {
-       position: relative;
-   } 
-}*/
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-    section {
-        padding-left: 20px;
-        padding-right: 20px;
+    #about-me {
+        display: flex;
+        flex-direction: column;
     }
+    
     .bio img {
         height: 60%;
         width: 60%;
         margin-left: 35px;
+        margin: 8px auto;
     }
 
     #about-me p {
         width: 90%;
-    }
-}
-
-/* MEDIA QUERY to account for h2 shifting */
-@media screen and (max-width: 908px) {
-    /* contact me keeps shifting right  */
-    #contact section {
-        padding-left: 0px;
     }
 }
 
@@ -311,24 +298,6 @@ form {
         font-size: 20px;
     }
 
-    .main-left {
-        flex: 1 50%;
-        text-align: center;
-        padding-bottom: 8px;
-    }
-
-    .main-right {
-        flex: 1 100%;
-        border-left: none;
-        padding-left: 0px;
-    }
-
-    .main-content h2 {
-        text-align: center;
-        padding-bottom: 10px;
-        border-bottom: 4px solid var(--charcoal);
-    }
-
     .bio img {
         flex: 1 100%;
         margin-left: 0px;
@@ -339,18 +308,32 @@ form {
         text-align: center;
     }
 
-    address {
-        padding-top: 10px;
+    #work img {
+        height: 260px;
+        width: 320px;
     }
+
+    address {
+        margin: 10px;
+    }
+
+    #contact {
+        justify-content: space-evenly;
+    }
+
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    .main-content h2 {
-        font-size: 30px;
+    #contact {
+        align-items: center;
     }
 
-    section {
-        padding: 100px 5px 0px 5px;
+    address {
+        font-size: 12px;
+    }
+
+    #btn-contact-form {
+        width: 100%;
     }
 }

@@ -18,10 +18,14 @@ https://akman47.github.io/portfolio
 ![Snapshot of Run Buddy application](./assets/images/run-buddy.png)
 * Weather Dashboard (https://akman47.github.io/weather-dashboard)
 ![Snapshot of a city's weather forecast](./assets/images/weather-dashboard.png)
-* Taskinator (https://akman47.github.io/taskinator)
-![Snapshot of a task tracking board](./assets/images/taskinator.png)
+* Coding Quiz (https://akman47.github.io/code-quiz)
+![Snapshot of a quiz about coding] (./assets/images/code-quiz.png)
+* Taskmaster-Pro (https://akman47.github.io/taskmaster-pro)
+![Snapshot of a task tracking board](./assets/images/taskmaster-pro.png)
 * Password Generator (https://akman47.github.io/password-generator)
 ![Snapshot of Password Generator application](./assets/images/password-generator.png)
+* Happy Meals (https://jmol721.github.io/get-you-a-happy-meal-toy-not-included)
+![Snapshot of Happy Meal application](./assets/images/happy-meal.png)
 
 ## Criteria
 * GIVEN I need to sample a potential employee's previous work

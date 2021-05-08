@@ -25,7 +25,7 @@ https://akman47.github.io/portfolio
 * Password Generator (https://akman47.github.io/password-generator)
 ![Snapshot of Password Generator application](./assets/images/password-generator.png)
 * Happy Meals (https://jmol721.github.io/get-you-a-happy-meal-toy-not-included)
-![Snapshot of Happy Meal application](./assets/images/happy-meal.png)
+![Snapshot of Happy Meal application](./assets/images/happy-meals.png)
 
 ## Criteria
 * GIVEN I need to sample a potential employee's previous work

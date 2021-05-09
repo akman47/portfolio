@@ -19,7 +19,7 @@ https://akman47.github.io/portfolio
 * Weather Dashboard (https://akman47.github.io/weather-dashboard)
 ![Snapshot of a city's weather forecast](./assets/images/weather-dashboard.png)
 * Coding Quiz (https://akman47.github.io/code-quiz)
-![Snapshot of a quiz about coding] (./assets/images/code-quiz.png)
+![Snapshot of a quiz about coding](./assets/images/code-quiz.png)
 * Taskmaster-Pro (https://akman47.github.io/taskmaster-pro)
 ![Snapshot of a task tracking board](./assets/images/taskmaster-pro.png)
 * Password Generator (https://akman47.github.io/password-generator)

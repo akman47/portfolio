@@ -1,8 +1,8 @@
 const router = require('express').Router();
-
 const { Contact } = require('../models');
+const withAuth = require('../utils/auth');
 
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Contact.findAll({})
         .then(dbContactData => {
             const messages = dbContactData.map(message => message.get({ plain: true }));

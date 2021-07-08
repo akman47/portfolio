@@ -1,6 +1,6 @@
 # Portfolio
 
-## Purpose
+## Description
 A website that showcases my projects and abilities as a web developer
 
 ## Built With

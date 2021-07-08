@@ -1,0 +1,20 @@
+<section class="dashboard-list">
+    <h2>Contact Messages</h2>
+    <div class="messages-dashboard">
+        {{#if messages.length}}
+        {{#each messages}}
+        <div class="contact-container">
+            <div class="contact-header">
+                <p>{{name}}</p>
+                <p>{{email}}</p>
+            </div>
+            <div class="contact-message">
+                {{message}}
+            </div>
+        </div>
+        {{/each}}
+        {{#else}}
+        <p>No messages</p>
+        {{/if}}
+    </div>
+</section>

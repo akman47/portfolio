@@ -12,21 +12,21 @@ Contact.init(
             autoIncrement: true
         },
         name: {
-            type: DataTypes.String,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [1]
             }
         },
         email: {
-            type: DataTypes.String,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 isEmail: true
             }
         },
         message: {
-            type: DataTypes.String,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [1]

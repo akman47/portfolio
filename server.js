@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 3001;
 // set up express middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // set up handlebar.js as template engine
 app.engine('handlebars', hbs.engine);

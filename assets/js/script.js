@@ -1,14 +1,30 @@
-var contactFormButtonEl = document.querySelector("#btn-contact-form");
-var nameInputEl = document.querySelector("#name");
-var emailInputEl = document.querySelector("#email");
-var messageInputEl = document.querySelectory("#message");
-
-var saveMessage = function(event) {
+async function saveMessage(event) {
     event.preventDefault();
 
-    var name = nameInputEl.value.trim();
-    var email = emailInputEl.value.trim();
-    var message = messageInputEl.value.trim();
-}
+    const name = document.querySelector("#name").value.trim();
+    const email = document.querySelector("#email").value.trim();
+    const message = document.querySelectory("#message").value.trim();
 
-contactFormButtonEl.addEventListener("click", saveMessage());
+    const response = await fetch('/api/contacts', {
+        method: 'POST',
+        body: JSON.stringify({
+            name,
+            email,
+            message
+        }),
+        headers: {
+            'Content-Type':'application/json'
+        }
+    });
+
+    if (response.ok) {
+        document.location.reload();
+        alert('Message Sent')
+        return;
+    }
+    else {
+        alert(response.statusText);
+    }
+};
+
+document.querySelector("#btn-contact-form").addEventListener("click", saveMessage);

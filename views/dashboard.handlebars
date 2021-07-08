@@ -1,6 +1,39 @@
-<section class="dashboard-list">
+<section class="signup-modal">
+    <div class="modal-content">
+        <h3>Create Access Account</h3>
+        <form class="signup-form">
+            <input type="text" id="signup-first-name" placeholder="First Name"><br>
+            <input type="text" id="signup-last-name" placeholder="Last Name"><br>
+            <input type="text" id="signup-email" placeholder="Email"><br>
+            <input type="text" id="signup-password" placeholder="Password"><br>
+            <div class="btn-container-modal">
+                <button type="submit" id="btn-create" class="btn">Create</button>
+                <button type="button" id="btn-close" class="btn">Close</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{{!-- {{#unless loggedIn}} --}}
+<section class="login">
+    <div>
+        Only site owner has access to view dashboard
+    </div>
+    <form class="login-form">
+        <input type="text" id="email-login" placeholder="Email" /><br>
+        <input type="text" id="password-login" placeholder="Password" /><br>
+        <div class="btn-container">
+            <button type="submit" class="btn btn-login">Log In</button>
+            <button type="button" id="btn-signup" class="btn-no-style">Don't have an account? Sign up!</button>
+        </div>
+    </form>
+</section>
+{{!-- {{/unless}} --}}
+
+{{!-- {{#if loggedIn}} --}}
+<section class="dashboard">
     <h2>Contact Messages</h2>
-    <div class="messages-dashboard">
+    <div class="messages-list">
         {{#if messages.length}}
         {{#each messages}}
         <div class="contact-container">
@@ -13,8 +46,12 @@
             </div>
         </div>
         {{/each}}
-        {{#else}}
+        {{!-- {{#else}} --}}
         <p>No messages</p>
         {{/if}}
     </div>
 </section>
+{{!-- {{/if}} --}}
+
+<script src="/javascript/login.js"></script>
+<script src="/javascript/signup.js"></script>

@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
         });
 });
 
-router.put('/', (req, res) => {
+router.put('/:id', (req, res) => {
     Contact.update(
         {
             name: req.body.name,
